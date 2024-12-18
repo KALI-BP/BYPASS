@@ -1,5 +1,5 @@
 @echo off
-title @RealXenomania
+title FIRST ZONE
 color 03
 (Set LF=^
 %Null%
@@ -9,7 +9,7 @@ set "string=abcdefghijklmnopqrstuvwxyz0123456789"
 
 :MenuGuest
 cls
-CHOICE /C 12345 /N /T 30 /D 5 /M "1. GL Guest Reset!LF!2. VN Guest Reset!LF!3. KR Guest Reset!LF!4. TW Guest Reset!LF!5. Go Back!LF!%1
+CHOICE /C 12345 /N /T 30 /D 5 /M "1. GL Guest Reset!LF!2. VN Guest Reset!LF!3. KR Guest Reset!LF!4. TW Guest Reset!LF!%1
 IF ERRORLEVEL 4 goto TWPackage
 IF ERRORLEVEL 3 goto KRPackage
 IF ERRORLEVEL 2 goto VNPackage
